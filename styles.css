@@ -9,6 +9,13 @@ header {
     font-weight: bold;
 }
 
+.searchbox {
+    float: right;
+    padding: 6px;
+    margin: 12px 12px;
+    width: 300px;
+}
+
 .header-logo {
     float: left;
     margin-right: 12px;
@@ -23,13 +30,6 @@ header {
     height: 90px;
 }
 
-.searchbox {
-    float: right;
-    padding: 6px;
-    margin: 12px 12px;
-    width: 300px;
-}
-
 #header-name {
     font-size: 48px;
     color: #9e7a62;
@@ -37,6 +37,72 @@ header {
     margin: 6px 0px;
     font-weight: bold;
 }
+
+nav {
+    height: 60px;
+    width: 100%;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    padding-left: 6px;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+.background-gradient {
+    color: white;
+    background: linear-gradient(to right, #c09a59, #62260e);
+    background: -webkit-linear-gradient(left, #c09a59, #62260e);
+    background: -o-linear-gradient(right, #c09a59, #62260e);
+    background: -moz-linear-gradient(right, #c09a59, #62260e);
+}
+
+.nav-link {
+    height: 36px;
+    margin-right: 12px;
+    font-size: 18px;
+    float: left;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 6px;
+}
+
+.add-to-cart-btn {
+    cursor: pointer;
+    padding: 6px 24px;
+    background: #8e5c31;
+    border: 1px solid #62260e;
+
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+
+    box-shadow: 0 0 6px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0, .75);
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0, .75);
+
+    color: #f6e4cc;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 72px;
+}
+
+    .add-to-cart-btn:hover, .add-to-cart-btn:focus {
+        background-color: #c09a59;
+        box-shadow: 0 0 2px rgba(0,0,0, .75);
+        -moz-box-shadow: 0 0 2px rgba(0,0,0, .75);
+        -webkit-box-shadow: 0 0 2px rgba(0,0,0, .75);
+    }
 
 #welcome-img {
     float: left;
