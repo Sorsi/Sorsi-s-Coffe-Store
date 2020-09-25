@@ -37,6 +37,49 @@
         <img src="images/CoffeeBag.png" alt="welcome coffee">
     </div>
 
+    <form id="main-form" action="#" method="post">
+        <fieldset class="box">
+            <legend>Your details</legend>
+            <div>
+                <p><label class="text-label" for="first-name">First Name</label>
+                    <input class="text-input" id="first-name" name="first-name" type="text" autofocus></p>
+                <p><label class="text-label" for="last-name">Last Name</label>
+                    <input class="text-input" id="last-name" name="last-name" type="text" size="10"></p>
+                <p><label class="text-label" for="e-mail">E-mail</label>
+                    <input class="text-input" id="e-mail" name="e-mail" type="email"></p>
+                <p><label class="text-label" for="street">Street</label>
+                    <input class="text-input" id="street" name="street" type="text"></p>
+                <p><label class="text-label" for="number">Number</label>
+                    <input class="text-input" id="number" name="number" type="number"></p>
+                <p><label class="text-label" for="e-mail">ZIP code</label>
+                    <input class="text-input" id="zip" name="zip" type="text"></p>
+                <p><label class="text-label" for="city">City</label>
+                    <input class="text-input" id="city" name="city" type="text"></p>
+                <p><label class="text-label" for="country">Country</label>
+                    <input class="text-input" id="country" name="country" type="text"></p>
+                <p><label class="text-label" for="phone-number">Phone number</label>
+                    <input class="text-input" id="phone-number" name="phone-number" type="tel"></p>
+                <p><label class="text-label" for="blog">Blog</label>
+                    <input class="text-input" id="blog" name="blog" type="url"></p>
+                <p><label class="text-label" for="remark">Remarks</label>
+                    <input class="text-input" id="remark" name="remark" type="text"></p>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset class="box">
+            <legend>Your order</legend>
+            <p><label class="text-label" for="delivery-date">Requested delivery date</label>
+                <input class="text-input" id="delivery-date" name="delivery-date" type="date"></p>
+            <p><label class="text-label" for="color">Please choose wrapping paper color</label>
+                <input class="text-input" id="color" name="color" type="color"></p>
+            <p><label class="text-label" for="bows">How many bows on the package?</label>
+                <input class="text-input" id="bows" name="bows" type="number"></p>
+        </fieldset>
+
+        <input class="sbmt-btn" type="submit" value="Place order">
+
+    </form>
+
     <footer>
         <p>Our address is
         <address>1045 Nyar u. 71.</address>
