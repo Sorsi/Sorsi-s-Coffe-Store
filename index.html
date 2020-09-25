@@ -1,92 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Sorsi's Coffee Store</title>
-        <script src=""></script>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header id="main-header">
-            <div>
-                <a class="header-logo" href="index.html">
-                    <img src="images/header-logo-coffee.png" alt="Sorsi logo">
-                </a>
-                <span id="header-name">Sorsi's Coffee Store</span>
-                <input type="search" class="searchbox" placeholder="Let's search">
-            </div>
-        </header>
 
-        <div id="welcome-img">
-            <img src="images/espresso-coffee-cup-with-beans-bckground.jpg" alt="welcome coffee">
+<head>
+    <meta charset="utf-8">
+    <title>Sorsi's Coffee Store</title>
+    <script src=""></script>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div>
+            <a class="header-logo" href="index.html">
+                <img src="images/header-logo-coffee.png" alt="Sorsi logo">
+            </a>
+            <span id="header-name">Sorsi's Coffee Store</span>
+            <input type="search" class="searchbox" placeholder="Let's search">
         </div>
-        <div id="coffee-of-the-month">
-            <img src="images/CoffeeBag.png" alt="welcome coffee">
-        </div>
-
-        <section id="welcome-txt">
-            <header>Welcome to Sorsi's Coffee Store!</header>
-            <span>
-                Our company is the best in town. We have a long-long history. I would write here some really personal.
-                And encourage you to come to our page and spend a lot of money and buy a lot of delicious coffee! See
-                you soon and have a wonderful week!
-                <p><mark>Note that our store is closed on Christmas eve and Christmas day.</mark></p>
-            </span>
-        </section>
-
-        <aside id="events">
-            <header>Look at here --></header>
+        <nav class="background-gradient">
             <ul>
-                <li><a href="#">New Arabica coffee added</a></li>
-                <li><a href="#">Store redecorated</a></li>
-                <li><a href="#">New website launched</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                <li><a class="nav-link" href="all-coffee.html">Products</a></li>
+                <li><a class="nav-link" href="accessories.html">Accessories</a></li>
+                <li><a class="nav-link" href="gifts.html">Gifts</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+                <li><a class="nav-link" href="checkout.html">Checkout</a></li>
             </ul>
-        </aside>
+        </nav>
+    </header>
 
-        <section id="bestsellers">
-            <header>Bestsellers @ Sorsi's Coffee Store</header>
-            <section class="coffee-bestsellers">
-                <header class="background-gradient">
-                    Coffees
+    <div id="welcome-img">
+        <img src="images/espresso-coffee-cup-with-beans-bckground.jpg" alt="welcome coffee">
+    </div>
+    <div id="coffee-of-the-month">
+        <img src="images/CoffeeBag.png" alt="welcome coffee">
+    </div>
+
+    <section id="welcome-txt">
+        <header>Welcome to Sorsi's Coffee Store!</header>
+        <span>
+            Our company is the best in town. We have a long-long history. I would write here some really personal.
+            And encourage you to come to our page and spend a lot of money and buy a lot of delicious coffee! See
+            you soon and have a wonderful week! Our company is the best in town. We have a long-long history. I would
+            write here some really personal.
+            And encourage you to come to our page and spend a lot of money and buy a lot of delicious coffee! See
+            you soon and have a wonderful week! Our company is the best in town. We have a long-long history. I would
+            write here some really personal.
+            And encourage you to come to our page and spend a lot of money and buy a lot of delicious coffee! See
+            you soon and have a wonderful week!
+            <p><mark>Note that our store is closed on Christmas eve and Christmas day.</mark></p>
+        </span>
+    </section>
+
+    <aside id="events">
+        <header>Look at here --></header>
+        <ul>
+            <li><a href="#">New Arabica coffee added</a></li>
+            <li><a href="#">Store redecorated</a></li>
+            <li><a href="#">New website launched</a></li>
+        </ul>
+    </aside>
+
+    <section id="bestsellers">
+        <header>Bestsellers @ Sorsi's Coffee Store</header>
+        <section class="coffee-bestsellers">
+            <header class="background-gradient">
+                Coffees
+            </header>
+            <article class="product-article">
+                <figure>
+                    <img class="product-article-thumbnail" src="images/all-coffee-background.jpg" alt="">
+                </figure>
+                <header>
+                    <span class="product-article-name"><a href="coffee-details.html"></a>Coffee 1</span>
                 </header>
-                <article class="product-article">
-                    <figure>
-                        <img class="product-article-thumbnail" src="images/all-coffee-background.jpg" alt="">
-                    </figure>
-                    <header>
-                        <span class="product-article-name"><a href="coffee-details.html"></a>Coffee 1</span>
-                    </header>
-                    <p class="product-article-price">10</p>
-                    <div class="add-to-cart-btn">
-                        Add to Cart
-                    </div>
-                </article>
-            </section>
-
-            <section class="accessories-bestsellers">
-                <header class="background-gradient">
-                    Coffees
-                </header>
-                <article class="product-article">
-                    <figure>
-                        <img class="product-article-thumbnail" src="images/CoffeeBag.png" alt="">
-                    </figure>
-                    <header>
-                        <span class="product-article-name"><a href="coffee-details.html"></a>Coffee 1</span>
-                    </header>
-                    <p class="product-article-price">10</p>
-                    <div class="add-to-cart-btn">
-                        Add to Cart
-                    </div>
-                </article>
-            </section>
-
+                <p class="product-article-price">10</p>
+                <div class="add-to-cart-btn" id="my-add-to-cart-btn">
+                    Add to Cart
+                </div>
+            </article>
         </section>
 
-        <footer>
-            <p>Our address is <address>1045 Nyar u. 71.</address></p>
-            <p class="txt-content">All site contents is copyright </p>
-            <p class="small-txt">This page was generated on <time>09:25:04.123</time>.</p>
-        </footer>
-    </body>
+        <section class="accessories-bestsellers">
+            <header class="background-gradient">
+                Coffees
+            </header>
+            <article class="product-article">
+                <figure>
+                    <img class="product-article-thumbnail" src="images/CoffeeBag.png" alt="">
+                </figure>
+                <header>
+                    <span class="product-article-name"><a href="coffee-details.html"></a>Coffee 1</span>
+                </header>
+                <p class="product-article-price">10</p>
+                <div class="add-to-cart-btn">
+                    Add to Cart
+                </div>
+            </article>
+        </section>
+
+        <section class="accessories-bestsellers">
+            <header class="background-gradient">
+                Coffees
+            </header>
+            <article class="product-article">
+                <figure>
+                    <img class="product-article-thumbnail" src="images/CoffeeBag.png" alt="">
+                </figure>
+                <header>
+                    <span class="product-article-name"><a href="coffee-details.html"></a>Coffee 1</span>
+                </header>
+                <p class="product-article-price">10</p>
+                <div class="add-to-cart-btn">
+                    Add to Cart
+                </div>
+            </article>
+        </section>
+
+    </section>
+
+    <footer>
+        <p>Our address is
+        <address>1045 Nyar u. 71.</address>
+        </p>
+        <p class="txt-content">All site contents is copyright </p>
+        <p class="small-txt">This page was generated on <time>09:25:04.123</time>.</p>
+    </footer>
+    <script src="myScript.js"></script>
+</body>
+
 </html>
