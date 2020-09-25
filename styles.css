@@ -120,6 +120,8 @@ section {
     font-size: 12px;
     margin-top: 24px;
     margin-bottom: 24px;
+    column-width: 200px;
+    column-gap: 40px;
 }
 
     #welcome-txt > header {
