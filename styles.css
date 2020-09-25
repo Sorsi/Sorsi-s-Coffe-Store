@@ -1,0 +1,114 @@
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: monospace;
+}
+
+header {
+    font-weight: bold;
+}
+
+.header-logo {
+    float: left;
+    margin-right: 12px;
+}
+
+    .header-logo > img {
+        height: 60px;
+        width: 60px;
+    }
+
+#main-header {
+    height: 90px;
+}
+
+.searchbox {
+    float: right;
+    padding: 6px;
+    margin: 12px 12px;
+    width: 300px;
+}
+
+#header-name {
+    font-size: 48px;
+    color: #9e7a62;
+    padding: 12px;
+    margin: 6px 0px;
+    font-weight: bold;
+}
+
+#welcome-img {
+    float: left;
+    width: 700px;
+}
+
+#coffee-of-the-month {
+    float: right;
+    width: 300px;
+}
+
+#welcome-txt {
+    float: left;
+    width: 70%;
+    font-size: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+    #welcome-txt > header {
+        color: #5a1800;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 6px;
+    }
+
+#events {
+    float: right;
+    width: 30%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+#events > header {
+    margin-left: 12px;
+    color: #5a1800;
+    font-size: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+    #events > ul {
+        list-style: none;
+    }
+
+        #events > ul > li {
+            margin-bottom: 6px;
+        }
+
+#bestsellers {
+    height: 100%;
+    width: 700px;
+    float: left;
+    margin-bottom: 24px;
+}
+
+.product-article-more-info {
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    margin: 24px 0px 24px;
+    padding: 6px;
+}
+
+.small-txt {
+    font-size: 10px;
+}
+
+/* All coffee page style */
+
+
