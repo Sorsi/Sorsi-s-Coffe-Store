@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Sorsi's Coffee Store</title>
-    <script src=""></script>
+    <script src="reports.js"></script>
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -36,6 +36,12 @@
         <img src="images/CoffeeBag.png" alt="welcome coffee">
     </div>
 
+    <div id="sales-canvas-graph">
+        <canvas id="bar-chart">
+            Sorry your browser doesn't support canvas, therefore you can not see this chart.
+        </canvas>
+    </div>
+
     <footer>
         <p>Our address is
         <address>1045 Nyar u. 71.</address>
@@ -43,7 +49,9 @@
         <p class="txt-content">All site contents is copyright </p>
         <p class="small-txt">This page was generated on <time>09:25:04.123</time>.</p>
     </footer>
-    <script src="myScript.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", drawChart, false);
+    </script>
 </body>
 
 </html>
