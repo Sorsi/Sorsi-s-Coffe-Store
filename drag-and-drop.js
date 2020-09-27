@@ -3,8 +3,30 @@ function addDragAndDropHandlers() {
     let shoppingCartDropZone = document.getElementById('shopping-cart');
     let shoppingCart = document.querySelectorAll('#shopping-cart ul')[0];
 
+    let Cart = (function () {
+        this.coffees = [];
+    });
+
+    let Coffee = (function (id, price) {
+        this.coffeeId = id;
+        this.price = price;
+    });
+
+    let currentCart = null;
+
+    currentCart = JSON.parse(localStorage.getItem('cart'));
+    if (!currentCart) {
+        createEmptyCart();
+    }
+
+    updateShoppingCartUI();
+
+    currentCart.addCoffee = function(coffee) {
+        currentCart.coffees.push(coffee);
+        localStorage.setItem('cart', JSON.stringify(currentCart));
+    };
+
     for (let i = 0; i < coffeeImages.length; i++) {
-        console.log('length of the images', coffeeImages.length);
         coffeeImages[i].addEventListener('dragstart', function(ev) {
             ev.dataTransfer.effectAllowed = 'copy';
             ev.dataTransfer.setData('Text', this.getAttribute('id'));
@@ -12,7 +34,6 @@ function addDragAndDropHandlers() {
     }
 
     shoppingCartDropZone.addEventListener('dragover', function(ev) {
-        console.log('dragover');
         if (ev.preventDefault)
             ev.preventDefault();
         ev.dataTransfer.dropEffect = 'copy';
@@ -20,8 +41,6 @@ function addDragAndDropHandlers() {
     }, false);
 
     shoppingCartDropZone.addEventListener('drop', function(ev) {
-        console.log('drdrop');
-
         if (ev.stopPropagation)
             ev.stopPropagation();
 
@@ -35,10 +54,25 @@ function addDragAndDropHandlers() {
     }, false);
 
     function addCoffeeToShoppingCart(item, id) {
-        let html = id + '' + item.getAttribute('data-price');
+        let price = item.getAttribute('data-price');
+        let coffee = new Coffee(id, price);
 
-        let liElement = document.createElement('li');
-        liElement.innerHTML = html;
-        shoppingCart.appendChild(liElement);
+        currentCart.addCoffee(coffee);
+        updateShoppingCartUI();
+    }
+
+    function createEmptyCart() {
+        localStorage.clear();
+        localStorage.setItem('cart', JSON.stringify(new Cart()));
+        currentCart = JSON.parse(localStorage.getItem('cart'));
+    }
+
+    function updateShoppingCartUI() {
+        shoppingCart.innerHTML = '';
+        for (let i = 0; i < currentCart.coffees.length; i++) {
+            let liElement = document.createElement('li');
+            liElement.innerHTML = currentCart.coffees[i].coffeeId + ' ' + currentCart.coffees[i].price;
+            shoppingCart.appendChild(liElement);
+        }
     }
 }
