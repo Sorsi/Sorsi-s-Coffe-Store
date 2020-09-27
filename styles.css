@@ -231,7 +231,6 @@ footer {
 }
 
 /*All coffees page styles*/
-
 .block-header {
     font-size: 36px;
     margin-top: 18px;
@@ -283,46 +282,13 @@ footer {
     width: 175px;
 }
 
-/*Coffee detail page*/
-
-.coffee-details {
-    float: left;
-    width: 1000px;
+/*Sales reports page*/
+#bar-chart {
+    height: 800px;
+    width: 750px;
 }
 
-.prod-article-large-img {
-    width: 200px;
-    height: 300px;
-}
-
-.prod-article-large-figure {
-    float: left;
-    margin: 12px;
-}
-
-.prod-article-content {
-    width: 75%;
-    float: right;
-}
-
-.prod-article-description {
-    text-wrap: normal;
-}
-
-.prod-article-price {
-    font-size: 24px;
-    color: green;
-    font-weight: bold;
-    padding-top: 18px;
-}
-
-.coffee-video-player {
-    width: 320px;
-    height: 240px;
-}
-
-/*Contact page styles*/
-
+/*Contact page*/
 .map-to-store {
     float: left;
     width: 1000px;
@@ -335,12 +301,7 @@ footer {
     margin: 6px;
 }
 
-#driving-directions {
-    float: left;
-}
-
 /*Checkout page*/
-
 .text-label {
     text-align: left;
     font-size: 14px;
