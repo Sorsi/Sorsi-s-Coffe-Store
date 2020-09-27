@@ -56,7 +56,7 @@ nav {
     }
 
 .background-gradient {
-    color: white;
+    color: beige;
     background: linear-gradient(to right, #c09a59, #62260e);
     background: -webkit-linear-gradient(left, #c09a59, #62260e);
     background: -o-linear-gradient(right, #c09a59, #62260e);
@@ -69,7 +69,7 @@ nav {
     font-size: 18px;
     float: left;
     padding-top: 12px;
-    color: white;
+    color: beige;
     text-decoration: none;
 }
 
@@ -161,14 +161,72 @@ section {
     margin-bottom: 24px;
 }
 
+    #bestsellers > header {
+        color: #603813;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.coffee-bestsellers {
+    float: left;
+}
+
+    .coffee-bestsellers > header {
+        background-color: #603813;
+        color: beige;
+        padding-left: 12px;
+    }
+
+.accessories-bestsellers {
+    clear: both;
+}
+
+    .accessories-bestsellers > header {
+        height: 30px;
+        line-height: 30px;
+        background-color: #603813;
+        color: beige;
+        padding-left: 10px;
+    }
+
+
+.product-article {
+    width: 200px;
+    float: left;
+    margin-left: 24px;
+    margin-bottom: 12px;
+}
+
+.product-article-thumbnail {
+    width: 100px;
+    height: 150px;
+}
+
+.product-article-name {
+    font-size: 18px;
+    color: #603813;
+    font-weight: bold;
+}
+
+.product-article-price {
+    font-size: 15px;
+    color: green;
+    font-weight: bold;
+    padding-top: 18px;
+}
+
+
 .product-article-more-info {
     font-size: 12px;
+    color: #603813;
     margin-top: 6px;
 }
 
 footer {
     clear: both;
     width: 100%;
+    color: beige;
+    background-color: #ab8048;
     margin: 24px 0px 24px;
     padding: 6px;
 }
@@ -177,4 +235,135 @@ footer {
     font-size: 10px;
 }
 
-/* All coffee page style */
+/*All coffees page styles*/
+.block-header {
+    font-size: 36px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.prod-article-wide {
+    width: 100%;
+    float: left;
+}
+
+.prod-article-wide-thumbnail {
+    width: 100px;
+    height: 150px;
+    float: left;
+    margin: 18px;
+}
+
+.prod-article-wide-content {
+    width: 80%;
+    float: right;
+}
+
+.prod-article-wide-description {
+    text-wrap: normal;
+}
+
+.prod-article-wide-name {
+    font-size: 18px;
+    color: #603813;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.prod-article-wide-price {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.all-coffee {
+    float: left;
+    width: 750px;
+}
+
+#shopping-cart {
+    float: left;
+    width: 175px;
+}
+
+/*Coffee detail page*/
+.coffee-details {
+    float: left;
+    width: 1000px;
+}
+
+.prod-article-large-img {
+    width: 200px;
+    height: 300px;
+
+}
+
+.prod-article-large-figure {
+    float: left;
+    margin: 12px;
+}
+
+.prod-article-content {
+    width:75%;
+    float: right;
+}
+
+.prod-article-description {
+    text-wrap: normal;
+}
+
+.prod-article-price {
+    font-size: 24px;
+    color: green;
+    font-weight: bold;
+    padding-top: 18px;
+}
+
+.coffee-video-player {
+    width:320px;
+    height: 240px;
+}
+
+/*Find us page styles*/
+.map-to-store {
+    float: left;
+    width: 1000px;
+}
+
+#map {
+    float: left;
+    width: 65%;
+    height: 600px;
+    margin: 24px;
+}
+
+#driving-directions {
+    float: left;
+}
+
+/*Checkout page*/
+.text-label {
+	text-align: left;
+	font-size: 14px;
+	margin: 0px;
+    display: block;
+	width: 240px;
+	padding: 2px 5px;
+	float: left;
+}
+
+.text-input {
+	width: 300px;
+	height: 24px;
+	border: 1px solid #888888;
+}
+
+fieldset {
+	padding: 0px;
+	border: none;
+}
+
+fieldset > div {
+	border: 2px solid #888888;
+}
